@@ -7,9 +7,10 @@
   <body>
     <div class="container">
         <%- include ('layout') %>
+        <br>
         <h2 align="center">Create Member</h2>
         <% if(locals.errors){ %>
-          <ul class="alert alert-danger p-3">
+          <ul class="alert alert-danger" style="padding: 30px;">
             <% Object.values(errors).forEach(function(error){%>
                     <li><%= error.msg %></li>
             <%})%>
@@ -28,6 +29,7 @@
                       <label for="">Password:</label>
                       <input type="password" name="password" value="" class="form-control">
                 </div>
+                <br>
                 <input type="submit" name="" value="Register" class="btn btn-primary">
         </form>
     </div>

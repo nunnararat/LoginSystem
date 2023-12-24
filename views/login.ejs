@@ -7,6 +7,7 @@
   <body>
     <div class="container">
         <%- include ('layout') %>
+        <br>
         <h2 align="center">Login Form</h2>
         <%- messages() %>
         <% if(locals.errors){ %>
@@ -25,6 +26,7 @@
                       <label for="">Password:</label>
                       <input type="password" name="password" value="" class="form-control">
                 </div>
+                <br>
                 <input type="submit" name="" value="Login" class="btn btn-success">
         </form>
     </div>
